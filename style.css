@@ -1,0 +1,125 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    font-family: "Cairo",sans-serif;
+    transition: 0.5s all;
+    position: relative;
+}
+
+ul {
+    list-style: none;
+    text-align: center;
+}
+ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+ul li a:hover{
+    color: grey;
+}
+.fa-bars{
+    color: #070700 !important;
+    margin-top: 60px;
+}
+.nav-icon{
+    cursor: pointer;
+    transition: 0.2s all;
+    color: #fff;
+
+}
+.nav-icon:hover{
+    transform: scale(1.2);
+}
+nav {
+height: 100%;
+width: 0;
+position: fixed;
+z-index: 1;
+top: 0;
+left: 0;
+background-color: #070700;
+overflow-x: hidden;
+padding-top: 60px;
+transition: 0.5s;
+}
+.navlinks li a{
+    width: 0;
+}
+.reg-btn{
+    background-color: #070700;
+    border: 1px solid #070700;
+    border-radius: 12px 1px;
+    color: #fff;
+    padding: 10px 12px;
+}
+.reg-btn:hover{
+    background-color: #fff;
+    border: 1px solid #070700;
+    border-radius: 12px 1px;
+    color: #070700;
+    padding: 10px 12px;
+}
+
+/* login */
+.log-section{
+    margin-inline: auto;
+    width: 60vw;
+    height: 60vh;
+    transition: 0.3s all;
+    display: none;
+    border: 1px solid red;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 12px;
+    
+    position: relative;
+    /* position: relative; */
+}
+.log-section form{
+    display: flex;
+    flex-direction: column;
+    padding: 0 40px;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.log-section input{
+padding: 10px 20px;
+border-radius: 8px;
+border: 0.1px solid black;
+}
+.log-section .reg-btn {
+    border-radius: 12px;
+}
+.close-log{
+    position: absolute;
+    color: black;
+    z-index: 3;
+    top: 20px;
+    right: 20px
+}
+.clock {
+    float: right;
+    margin-right: 40px;
+    margin-top: 20px;
+}
+.center{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    color: #070700;
+    font-weight: bold;
+}
+.dflex{
+    display: flex;
+    gap: 5px;
+}
